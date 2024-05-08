@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Profile</title>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <div id="profile-section">
+    <h1>User Profile</h1>
+    <label for="username">Username:</label>
+    <span id="username"><?php echo $userData['username']; ?></span><br>
+    <label for="email">Email:</label>
+    <span id="email"><?php echo $userData['full_name']; ?></span><br>
+    <label for="password">Password:</label>
+    <span id="password">••••••••</span><br>
+    <button id="edit-profile-btn">Edit Profile</button>
+  </div>
+
+  <!-- Edit Profile Modal -->
+  <div id="edit-profile-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Profile</h2>
+      <form id="edit-profile-form">
+        <label for="new-username">New Username:</label>
+        <input type="text" id="new-username"><br>
+        <label for="new-email">New Email:</label>
+        <input type="email" id="new-email"><br>
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password"><br>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Include the JavaScript file -->
+  <script src="profile.js"></script>
+</body>
+</html>

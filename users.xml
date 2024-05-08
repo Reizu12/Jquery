@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<users>
+  <user>
+    <full_name/>
+    <username/>
+    <password/>
+  </user>
+<user><full_name>daireeningg</full_name><username>ha</username><password>d</password></user><user><full_name>princess</full_name><username>hatdog12345</username><password>123</password></user><user><full_name>cogie</full_name><username>c</username><password>c</password></user><user><full_name>ja</full_name><username>ja</username><password>ja</password></user><user><full_name>cogie</full_name><username>snowbi</username><password>123</password></user><user><full_name>cogie</full_name><username>hala</username><password>pogi</password></user><user><full_name>pogi</full_name><username>ako</username><password>1</password></user><user><full_name>haha</full_name><username>hoho</username><password>hihi</password></user><user><full_name>cogie</full_name><username>bonchon</username><password>123</password></user><user><full_name>d</full_name><username>didi</username><password>1</password></user><user><full_name>cogie</full_name><username>redvelvet</username><password>123</password></user><user><full_name>hatdog</full_name><username>shaq</username><password>d</password></user>
+<user>
+<full_name>james</full_name>
+<username>zeph</username>
+<password>123</password>
+<scores>
+  <score1>10</score1>
+  <score2>0</score2>
+  <score3>0</score3>
+  <score4>0</score4>
+  <score5>0</score5>
+</scores>
+</user>
+
+<user><full_name> Test</full_name><username>test</username><password>123</password><scores><score1>0</score1><score2>0</score2><score3>0</score3><score4>0</score4><score5>0</score5></scores></user><user><full_name>test2</full_name><username>test2</username><password>123</password><scores><score1>10</score1><score2>0</score2><score3>0</score3><score4>10</score4><score5>0</score5></scores></user><user><full_name>asd</full_name><username>asdasd</username><password>123</password><scores><score1>0</score1><score2>0</score2><score3>0</score3><score4>0</score4><score5>0</score5></scores></user><user><full_name>123asdasd</full_name><username>123asd</username><password>123</password><level>1</level><scores><score1>0</score1><score2>0</score2><score3>90</score3><score4>100</score4><score5>100</score5></scores></user><user><full_name>Frenz Beknowbo</full_name><username>Know</username><password>123</password><level>1</level><scores><score1>10</score1><score2>40</score2><score3>90</score3><score4>100</score4><score5>150</score5></scores></user></users>

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Shodo;
+    src: url(Shodo.ttf);
+}
+
+body {
+    font-family: 'Shodo';
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px; /* Increase margin-bottom */
+    text-align: center;
+    color: #333;
+    font-size: 150px;
+    margin-top: 40px; /* Increase margin-top */
+    margin-bottom: 10px;
+    font-family: 'Shodo';
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow:   
+        0px -3px 0 #212121,
+        0px -3px 0 #212121,
+        0px 3px 0 #212121,
+        0px 3px 0 #212121,
+        -3px 0px 0 #212121,
+        3px 0px 0 #212121,
+        -3px 0px 0 #212121,
+        -3px -3px 0 #212121,
+        3px -3px 0 #212121,
+        -3px 3px 0 #212121,
+        3px 3px 0 #212121,
+        -3px 9px 0 #212121,
+        0px 9px 0 #212121,
+        3px 9px 0 #212121,
+        0 9px 6px rgba(0,0,0,.6);
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 0 40px; /* Add padding to the sides */
+    text-align: justify; /* Justify text */
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+}
+
+.play-game-button {
+    text-align: center;
+    margin-top: 10px; /* Add space between paragraphs and button */
+}
+
+.play-game-button button {
+    position: absolute;
+    bottom: 60px; /* Adjust the position from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 600;
+    color: #382b22; /* $text */
+    text-transform: uppercase;
+    padding: 15px;
+    width: 200px; /* Adjust width to your desired size */
+    background: #DEBE6D; /* Change background color to #DEBE6D */
+    border: 2px solid; /* $pink-border */
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.play-game-button button:hover {
+    background-color: #c9a85d; /* Change hover background color */
+}
+
+.play-game-button button:active {
+    background-color: #ffe9e9; /* Change active background color */
+}
