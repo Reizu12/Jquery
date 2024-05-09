@@ -147,8 +147,8 @@ $(document).ready(function() {
     });
 
     $("#home").click(function() {
-        window.location.href = "../../home.php";
         saveLevel();
+        window.location.href = "../../home.php";
     });
 
 });

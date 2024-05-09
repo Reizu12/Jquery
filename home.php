@@ -20,7 +20,7 @@ if (isset($_POST['logout'])) {
     session_destroy();
 
     // Redirect to login page
-    header("Location: login.php");
+    header("Location: index.php");
     exit;
 }
 ?>
@@ -77,8 +77,39 @@ if (isset($_POST['logout'])) {
             });
     </script>
 
-    <form action="levels/level1/questions1.php" class="play-game-button">
-        <button type="submit">Play Game</button>
+    <form class="play-game-button">
+        <button type="button">Play Game</button>
+        <script>
+            $(document).ready(function() {
+                $('.play-game-button').click(function(e) {
+                    e.preventDefault();
+                        $.ajax({
+                            url: 'levels/getUsername.php',
+                            method: 'GET',
+                            success: function(response) {
+                                let username = response;
+                                
+                                $.ajax({
+                                    url: 'levels/resetScore.php',
+                                    method: 'POST',
+                                    data: { username: username},
+                                    success: function(response) {
+                                        console.error('Score resetted successfully!');
+                                        window.location.href = 'levels/level1/questions1.php';
+                                    },
+                                    error: function(xhr, status, error) {
+                                        console.error('Error resetting score:', error);
+                                    }
+                                });
+                            },
+                            error: function(xhr, status, error) {
+                                console.error('Error retrieving username:', error);
+                            }
+                        });
+                    });
+                });
+        
+        </script>
     </form>
     
     <form class="continue-button">

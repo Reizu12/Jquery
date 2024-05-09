@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     data: $(this).serialize(),
                     success: function(response) {
                         if (response === "success") {
-                            window.location.href = "login.php";
+                            window.location.href = "index.php";
                         } else {
                             $('#error-message').text(response);
                         }
@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="password" name="confirm_password" placeholder="Confirm Password" required><br><br>
             <input type="submit" value="Register">
         </form>
-        <p>Already have an account? <a href="login.php">Login here</a>.</p>
+        <p>Already have an account? <a href="index.php">Login here</a>.</p>
     </div>
 </body>
 </html>

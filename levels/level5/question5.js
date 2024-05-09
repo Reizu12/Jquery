@@ -6,13 +6,6 @@ $(document).ready(function() {
     let timerInterval;
     let timeLeft = 60;
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const scoreParam = urlParams.get('score');
-    if (scoreParam) {
-        score = parseInt(scoreParam);
-        $("#score").text("Score: " + score);
-    }
-
     $(".controls-container").hide();
     $(".menu-container").hide();
     $(".choice")
